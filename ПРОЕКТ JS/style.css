@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+}
+#header{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 700px;
+    padding: 15px;
+    border-bottom: 2px solid tomato;
+}
+input{
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+}
+input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid tomato;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    border: 0;
+    color: tomato;
+}
+.search {
+  background: tomato;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.search:before {
+  content: "";
+  font-size: 16px;
+  color: white;
+}
+.search-input{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 42px;
+}
+.logo{
+    color: tomato;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h4{
+    font-weight: 600;
+}
+li{
+    height: 50px;
+    color: tomato;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.menu, .close{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.menu:hover,
+.close:hover{
+    color: white;
+}
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: rgb(55, 55, 55);
+    box-shadow: 0 0 5px white;
+    transition: all .3s ease;
+    z-index: 1;
+}
+.sidebar-content li:hover{
+    background-color: black;
+}
+.sidebar-content li:hover button{
+    color: white;
+}
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.sidebar-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 65px;
+}
+#main{
+    background-color: tomato;
+    width: 100%;
+}
+.section-film{
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.film-poster img{
+    width: 150px;
+    height: 220px;
+}
+.film-rating{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.film-card-1{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.high-rating{
+    background-color: green;
+    padding: 2px;
+}
+.medium-rating{
+    background-color: orange;
+    padding: 2px;
+}
+#list{
+    display: flex;
+}
+#list:hover{
+    cursor: pointer;
+    color: white;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.section-genres,
+.section-countries,
+.section-studios{
+    padding: 35px;
+}
+.film-list{
+    display: none;
+}
+.film-card-2{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+.active{
+    display: flex;
+}
+.hide{
+    display: none;
+}

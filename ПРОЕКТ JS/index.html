@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header id="header">
+            <nav>
+                <div class="logo">
+                    <span class="material-icons menu">menu</span>
+                    <h4>MovieWatch</h4>
+                </div>
+                <div class="sidebar">
+                    <div class="logo">
+                        <span class="material-icons close">close</span>
+                        <h4>MovieWatch</h4>
+                    </div>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li id="home" class="hide">
+                                <span class="material-icons">home</span>
+                                <button class="home">Главная</button>
+                            </li>
+                            <li>
+                                <span class="material-icons">theaters</span>
+                                <button class="genres">Все жанры</button>
+                            </li>
+                            <li>
+                                <span class="material-icons">flag</span>
+                                <button class="countries">Страны</button>
+                            </li>
+                            <li>
+                                <span class="material-icons">movie</span>
+                                <button class="studios">Студии</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <form class="search-input">
+                <input type="text" placeholder="Искать здесь...">
+                <button class="search" type="submit"><img src="./search.png" alt=""></button>
+              </form>
+        </header>
+
+        <main id="main">
+            <section class="section-film">
+            </section>
+            <section class="section-genres">
+            </section>
+            <section class="section-countries">
+            </section>
+            <section class="section-studios">
+            </section>
+            <div class="film-list"></div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
